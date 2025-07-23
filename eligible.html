@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jagananna Vidya Deevana Eligibility Checker</title>
+    <link rel ="stylesheet" href="community.css">
+</head>
+<body>
+    <h1>Jagananna Vidya Deevana Eligibility Checker</h1>
+    <p><li>Only the students who are residents of Andhra Pradesh state are eligible to get the benefits of the scheme.</li>
+      <li>Students must have completed Class 12 and avail of admission in the colleges/ universities or institutes for further education in regular courses.</li>
+      <li>Only the students whose family income is not more than Rs 2.50 lacs are entitled to apply.</li>
+       <li>The benefits of the Jagananna Vidya Deevena Scheme are available for Scheduled Castes, Scheduled Tribes, backward classes, minorities, Kapus, economically backward classes, and differently-abled categories of students.</li>
+       <li>Those with 10 acres of wetland and 25 acres of dry land are also eligible for the benefit.</li>
+       <li>If the applying candidate any family member is a government employee or pensioner then he/she is not eligible. No family member of students is paying Income Tax.</li>
+       <li>The students who are from families of sanitation workers and the students who are professionally dependent on taxis, autos, and tractors are also eligible to avail of the benefits of the scheme.</li>
+        </p>
+    
+    <form id="eligibilityForm">
+        <label for="aadhaarNumber">Enter Aadhaar Number:</label>
+        <input type="text" id="aadhaarNumber" name="aadhaarNumber" required>
+        
+        <button type="submit">Check Eligibility</button>
+    </form>
+    
+    <div id="eligibilityResult" style="display: none;">
+        <h2>Eligibility Status:</h2>
+        <p id="resultText"></p>
+    </div>
+
+    <script>
+        document.getElementById("eligibilityForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            // Perform eligibility check here
+            var aadhaarNumber = document.getElementById("aadhaarNumber").value;
+            
+            // Replace the following logic with your own eligibility check code
+            
+            // Assume eligibility is determined based on a boolean value
+            var isEligible = true;
+            
+            // Check if the person is eligible for Jagananna Vidya Deevana
+            if (isEligible) {
+                document.getElementById("resultText").innerHTML = "Congratulations! You are eligible for Jagananna Vidya Deevana.";
+                document.getElementById("eligibilityResult").style.display = "block";
+            } else {
+                document.getElementById("resultText").innerHTML = "Sorry, you are not eligible for Jagananna Vidya Deevana.";
+                document.getElementById("eligibilityResult").style.display = "block";
+            }
+        });
+    </script>
+    <a  href="about.html"><button href="squard" style="color:white;background-color: green;border-style: solid;">BACKWARD</button></a>
+  <a href="Registration.html"><button href="squard" style="color:white;background-color: green;border-style: solid;">NEXT</button></a>
+
+    </body>
+</html>

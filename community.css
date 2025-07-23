@@ -1,0 +1,36 @@
+body{
+ background-color:lavenderblush;
+}
+
+h1{
+color:red;
+text-align:center;
+}
+li{
+color:blue;
+}
+ 
+h2{
+color:blueviolet;
+}
+
+ol li{
+color:blue;
+}
+
+h3{
+color:cadetblue;
+}
+
+p{
+color:black;
+}
+
+li a{
+color:red;
+}
+
+tr td{
+color:black;
+}
+

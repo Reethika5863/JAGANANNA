@@ -1,0 +1,75 @@
+body {
+    background-image:url(pic5.jpg);
+    background-size: cover;
+    background-position: center;
+    color:#333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    line-height: 1.5;
+    margin: 0;
+    text-align: center;
+}
+
+header {
+   background-color:aqua;
+   color:aqua;
+   padding: 20px;
+   text-align: center;
+}
+
+h1 {
+   Color:red;
+   text-align: center;
+}
+h2{
+   color:crimson;
+}
+h3{
+   color:cadetblue;
+
+}
+p{
+   color:deeppink;
+}
+
+nav {
+   color:black;
+   padding: 10px;
+}
+
+nav ul {
+   list-style-type:#666;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+}
+
+nav ul li {
+   margin-left: 10px;
+}
+
+nav ul li a {
+   color:black;
+   text-decoration:#666;
+   padding: 10px;
+}
+
+main {
+   padding: 20px;
+}
+ul li {
+   color:deeppink;
+}
+
+footer {
+   background-color:burlywood;
+   color:white;
+   padding: 10PX;
+   text-align: center;
+   margin-bottom: 300PX;
+}
+ul ol li{
+justify-content: center;
+}
+ 

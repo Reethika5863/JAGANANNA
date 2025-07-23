@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jagananna Vidya Deevana Registration Form</title>
+    <link rel ="stylesheet" href="community.css">
+</head>
+<body>
+    <h1>Jagananna Vidya Deevana Registration Form</h1>
+    
+    <li>Anyone in the family availing of the pension will not eligible for the scheme.</li>
+     <li>No one of the family members is a government employee is only eligible for the scheme.</li>
+      <li>The students who are studying all courses covered under the scheme are eligible.</li>
+       <li>The families who are below the poverty line are only eligible.</li>
+       <li>The family head income should be under Rs. 2.5 lakh per anum.</li>
+       <li>The family shouldn’t own a four-wheel vehicle i.e car, auto, etc…</li>
+       <li>Anyone in the family who pays poverty tax or IT returns are not eligible for the scheme.</li>
+        <li>The family having less than 1500 sq. ft house is eligible for the scheme.</li>
+       <li>The family who is availing of the ration are eligible for the scheme.</li>
+
+       <ul>
+    <form id="applicationForm">
+        <li>
+        <label for="aadhaarNumber">Aadhaar Number:</label>
+        <input type="text" id="aadhaarNumber" name="aadhaarNumber" required>
+        </li>
+        
+        <li>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        </li>
+
+        <li>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+        </li>
+        
+        <li>
+        <label for="school">School Name:</label>
+        <input type="text" id="school" name="school" required>
+        </li>
+        
+        <li>
+        <button type="submit">Submit Application</button>
+        </li>
+    </form></ul>
+
+    <script>
+        document.getElementById("applicationForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            // Get form values
+            var aadhaarNumber = document.getElementById("aadhaarNumber").value;
+            var name = document.getElementById("name").value;
+            var age = document.getElementById("age").value;
+            var school = document.getElementById("school").value;
+            
+            // Perform eligibility check here
+            // Replace the following logic with your own eligibility check code
+            var isEligible = true;
+            
+            if (isEligible) {
+                // Display a success message or perform further actions
+                
+                // For example, you can show a success message
+                alert("Congratulations! Your application for Jagananna Vidya Deevana has been submitted successfully.");
+                
+                // Or you can redirect the user to a confirmation page
+                // window.location.href = "confirmation.html";
+                
+                // Clear the form fields
+                document.getElementById("aadhaarNumber").value = "";
+                document.getElementById("name").value = "";
+                document.getElementById("age").value = "";
+                document.getElementById("school").value = "";
+            } else {
+                // Display an error message or perform further actions
+                
+                // For example, you can show an error message
+                alert("Sorry, you are not eligible for Jagananna Vidya Deevana.");
+            }
+        });
+    </script>
+    <a  href="eligible.html"><button href="squard" style="color:white;background-color: green;border-style: solid;">BACKWARD</button></a>
+    <a href="contact.html"><button href="squard" style="color:white;background-color: green;border-style: solid;">NEXT</button></a>
+</body>
+</html>
